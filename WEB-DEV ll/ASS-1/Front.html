@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Event Dashboard</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="title">🎯 Smart Event Dashboard</h1>
+
+<div class="container">
+
+```
+<!-- Add Event -->
+<div class="card">
+    <h2>Add New Event</h2>
+
+    <form id="eventForm">
+        <label>Event Title:</label>
+        <input type="text" id="eventTitle" required>
+
+        <label>Event Date:</label>
+        <input type="date" id="eventDate" required>
+
+        <label>Category:</label>
+        <select id="eventCategory">
+            <option>Conference</option>
+            <option>Workshop</option>
+            <option>Meeting</option>
+            <option>Party</option>
+        </select>
+
+        <label>Description:</label>
+        <textarea id="eventDescription"></textarea>
+
+        <button class="btn">Add Event</button>
+    </form>
+</div>
+
+<!-- Events List -->
+<div class="card">
+    <h2>My Events</h2>
+
+    <div class="button-group">
+        <button id="clearAllBtn" class="btn small">Clear All Events</button>
+        <button id="addSampleBtn" class="btn small">Add Sample Events</button>
+    </div>
+
+    <div id="eventContainer">
+        <div class="empty-state">No events yet. Add your first event!</div>
+    </div>
+</div>
+
+</div>
+
+<div class="card bottom">
+    <h2>DOM Manipulation Demo</h2>
+    <div id="demoContent" class="demo-box">
+        <strong>You Pressed:</strong> Meta
+    </div>
+</div>
+
+
+<script src="./logic.js"></script>
+</body>
+</html>
